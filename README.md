@@ -2,6 +2,8 @@
 
 Contains compose files, and more for TailTag!
 
+./certificates is not included, you need to bring your own (private.pem, public.crt)
+
 ./frontend is not included, clone it from tailtag/frontend
 create the .env.local file
 
