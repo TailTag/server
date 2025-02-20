@@ -1,6 +1,6 @@
 # Other repos
-/frontend/
-/landing-page/
+/frontend
+/landing-page
 
 # Traefik
 /traefik/.env
@@ -13,11 +13,7 @@
 /supabase/docker-compose.override.yml
 
 # Keycloak
-
-/keycloak/postgres_data
-/keycloak/keycloak-data
-/keycloak/themes/
-/keycloak/.env
+/keycloak
 
 # Certificates
 /certificates/private.pem
