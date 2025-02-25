@@ -1,0 +1,28 @@
+http:
+  routers:
+    homepage:
+      rule: "Host(`tailtag.link`)"
+      entryPoints:
+        - https
+      tls: true
+      service: app
+
+  services:
+    app:
+      failover:
+        service: main
+        fallback: backup
+
+    main:
+      loadBalancer:
+        healthCheck:
+          path: /api/sanity
+          interval: 10s
+          timeout: 3s
+        servers:
+        - url: "http://172.19.0.16:3000"
+
+    backup:
+      loadBalancer:
+        servers:
+        - url: "http://172.19.0.13:3001"

@@ -13,7 +13,7 @@ services:
     container_name: supabase-studio
     networks:
       - traefik
-    image: supabase/studio:20250113-83c9420
+    image: supabase/studio:20250219-7101314
     restart: unless-stopped
     healthcheck:
       test: [ "CMD", "node", "-e", "fetch('http://studio:3000/api/profile').then((r) => {if (r.status !== 200) throw new Error(r.status)})" ]

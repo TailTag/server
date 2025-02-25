@@ -1,6 +1,6 @@
 # Server Config for TailTag
 
-Contains compose files, and more for TailTag!
+Contains compose & config files, and more for TailTag!
 
 ## Very WIP, little to no support & docs.
 

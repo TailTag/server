@@ -1,7 +1,9 @@
 # Other repos
-/frontend
+/app
 /landing-page
 
+# Uptime Kuma
+/uptime/data
 # Traefik
 /traefik/.env
 
